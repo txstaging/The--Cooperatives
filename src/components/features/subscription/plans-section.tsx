@@ -115,7 +115,7 @@ export function PlansSection() {
       aria-labelledby="plans-title"
       className="scroll-mt-[82px] py-12 lg:pb-[98px] lg:pt-[71px]"
     >
-      <Container size="wide" className="flex flex-col gap-8 px-6 sm:px-6">
+      <Container size="wide" className="flex flex-col gap-8">
         <SectionHeading
           align="center"
           className="items-start text-start lg:items-center lg:text-center"

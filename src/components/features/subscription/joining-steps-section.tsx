@@ -7,7 +7,7 @@ export function JoiningStepsSection() {
 
   return (
     <section aria-labelledby="steps-title" className="bg-surface-muted py-12 lg:bg-surface-card lg:py-16">
-      <Container size="wide" className="flex flex-col gap-8 px-6 sm:px-6">
+      <Container size="wide" className="flex flex-col gap-8">
         <SectionHeading title={<span id="steps-title">{title}</span>} />
         <ol className="flex flex-col gap-4 lg:grid lg:grid-cols-4 lg:gap-0">
           {steps.map((step, index) => (

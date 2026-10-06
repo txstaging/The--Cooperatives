@@ -9,7 +9,7 @@ export function TrustSection() {
     <section aria-labelledby="trust-title" className="py-12 lg:py-16">
       <Container
         size="wide"
-        className="grid grid-cols-1 items-center gap-12 px-6 sm:px-6 lg:grid-cols-[minmax(0,590fr)_minmax(0,587fr)] lg:gap-x-[71px]"
+        className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,590fr)_minmax(0,587fr)] lg:gap-x-[71px]"
       >
         <div className="flex flex-col gap-6">
           <h2

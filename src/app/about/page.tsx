@@ -26,10 +26,10 @@ export default function AboutPage() {
       </div>
       {/* Vision box and CTA are 1267px wide in Figma — 13.5px wider than the
           container on each side — once the viewport has room for it. */}
-      <div className="lg:pt-[82px] xl:-mx-[13.5px]">
+      <div className="lg:pt-[82px] min-[1331px]:-mx-[13.5px]">
         <Vision2030Section />
       </div>
-      <div className="xl:-mx-[13.5px]">
+      <div className="min-[1331px]:-mx-[13.5px]">
         <CtaBanner />
       </div>
     </Container>

@@ -7,7 +7,7 @@ export function HomeHero() {
 
   return (
     <section aria-labelledby="home-hero-title">
-      <Container size="wide" className="lg:p-[10px]">
+      <Container size="wide" className="lg:py-[10px]">
         <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,604px)_minmax(0,521px)] lg:items-start lg:justify-between lg:gap-12 xl:gap-[105px]">
           <div className="flex flex-col items-center gap-5 lg:items-stretch lg:gap-0">
             <h1

@@ -15,7 +15,7 @@ export function ComparisonSection() {
 
   return (
     <section aria-labelledby="comparison-title" className="bg-surface-muted py-12 lg:bg-surface-card lg:py-16">
-      <Container size="wide" className="flex flex-col gap-8 px-6 sm:px-6">
+      <Container size="wide" className="flex flex-col gap-8">
         <SectionHeading title={<span id="comparison-title">{title}</span>} />
 
         {/* Phones (Figma mobile frame): one block per feature with the three plans side by side. */}

@@ -8,7 +8,7 @@ export function BenefitsSection() {
 
   return (
     <section aria-labelledby="benefits-title" className="py-12 lg:py-16">
-      <Container size="wide" className="flex flex-col gap-8 px-6 sm:px-6">
+      <Container size="wide" className="flex flex-col gap-8">
         <SectionHeading
           title={<span id="benefits-title">{title}</span>}
           subtitle={subtitle}

@@ -7,8 +7,8 @@ type ContainerProps<T extends ElementType> = {
 } & Omit<ComponentPropsWithoutRef<T>, "as">;
 
 const sizeClasses = {
-  default: "max-w-container",
-  wide: "max-w-wide",
+  default: "max-w-container-gutter",
+  wide: "max-w-wide-gutter",
 } as const;
 
 export function Container<T extends ElementType = "div">({
@@ -20,7 +20,7 @@ export function Container<T extends ElementType = "div">({
   const Component: ElementType = as ?? "div";
   return (
     <Component
-      className={cn("mx-auto w-full px-5 sm:px-6 lg:px-8 xl:px-0", sizeClasses[size], className)}
+      className={cn("mx-auto w-full px-8", sizeClasses[size], className)}
       {...props}
     />
   );

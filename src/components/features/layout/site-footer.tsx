@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
 export function SiteFooter() {
   return (
     <footer className="bg-brand-deep pb-6 pt-14 lg:bg-footer lg:pb-[25px] lg:pt-[65px]">
-      <Container className="px-6 sm:px-6">
+      <Container>
         <div className="flex flex-col gap-12 lg:grid lg:grid-cols-[300px_repeat(3,minmax(0,1fr))] lg:gap-x-10 lg:gap-y-10 xl:flex xl:flex-row xl:items-start xl:gap-0">
           <div className="flex flex-col gap-4 lg:col-span-1 lg:gap-0 xl:me-[117px] xl:w-[300px] xl:shrink-0">
             {/* Mobile: 32px mark, 20px wordmark, 8px gap. */}

@@ -7,7 +7,7 @@ export function SubscriptionHero() {
 
   return (
     <section aria-labelledby="subscription-hero-title" className="py-12 lg:pb-[90px] lg:pt-[100px]">
-      <Container size="wide" className="px-6 sm:px-6">
+      <Container size="wide">
         <div className="grid max-w-container grid-cols-1 gap-6 lg:grid-cols-2 lg:grid-rows-[360px_auto] lg:gap-x-[60px] lg:gap-y-0">
           {/* Figma pins the desktop text block 76.5px below the row top rather than centering it. */}
           <div className="flex flex-col gap-4 text-center lg:col-start-1 lg:row-start-1 lg:block lg:pt-[76.5px] lg:text-start">
@@ -31,7 +31,7 @@ export function SubscriptionHero() {
             {cta.label}
           </ButtonLink>
 
-          <div className="relative h-[198px] w-[297px] justify-self-center lg:col-start-2 lg:row-start-1 lg:h-[360px] lg:w-[540px] lg:justify-self-end">
+          <div className="relative aspect-[3/2] w-full max-w-[297px] justify-self-center lg:col-start-2 lg:row-start-1 lg:aspect-auto lg:h-[360px] lg:w-[540px] lg:max-w-none lg:justify-self-end">
             <Image
               src={image.src}
               alt={image.alt}

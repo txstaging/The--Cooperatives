@@ -7,6 +7,10 @@ import type { Config } from "tailwindcss";
  */
 const token = (name: string) => `rgb(var(--color-${name}) / <alpha-value>)`;
 
+/** Side padding of every page container; keep in sync with `px-8` in `Container`. */
+const gutter = "2rem";
+const withGutters = (width: string) => `calc(${width} + 2 * ${gutter})`;
+
 const config: Config = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
@@ -93,6 +97,8 @@ const config: Config = {
       maxWidth: {
         container: "1240px",
         wide: "1250px",
+        "container-gutter": withGutters("1240px"),
+        "wide-gutter": withGutters("1250px"),
       },
       height: {
         header: "82px",

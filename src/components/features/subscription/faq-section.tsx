@@ -8,7 +8,7 @@ export function FaqSection() {
 
   return (
     <section aria-labelledby="faq-title" className="bg-surface-muted py-12 lg:bg-surface-card lg:pb-[137px] lg:pt-16">
-      <Container size="wide" className="flex flex-col gap-8 px-6 sm:px-6">
+      <Container size="wide" className="flex flex-col gap-8">
         <SectionHeading title={<span id="faq-title">{title}</span>} />
         {/* Native exclusive accordion: details elements sharing a `name` close each other. */}
         <div className="flex flex-col gap-2 lg:min-h-[637px]">
