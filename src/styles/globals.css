@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand — Figma variable "التعاونية" */
+    --color-brand: 8 122 85; /* #087a55 */
+    --color-brand-strong: 0 101 68; /* #006544 */
+    --color-brand-deep: 4 63 49; /* #043f31 */
+
+    /* Ink (headings) */
+    --color-ink: 16 34 27; /* #10221b */
+    --color-ink-soft: 23 51 40; /* #173328 */
+
+    /* Text — Figma variables "Text primary / secondary / inverse" */
+    --color-text-primary: 26 26 26; /* #1a1a1a */
+    --color-text-secondary: 87 88 91; /* #57585b */
+    --color-text-muted: 102 117 110; /* #66756e */
+    --color-text-inverse: 255 255 255;
+
+    /* Surfaces — Figma variables "background/section", "background/card" */
+    --color-surface: 255 255 255;
+    --color-surface-card: 252 251 250; /* #fcfbfa */
+    --color-surface-tint: 145 113 113; /* used at 5% opacity */
+    --color-surface-muted: 247 249 247; /* #f7f9f7 — striped rows, benefit cards */
+    --color-surface-highlight: 239 247 242; /* #eff7f2 — recommended plan column */
+
+    /* Borders */
+    --color-border: 223 233 228; /* #dfe9e4 */
+    --color-border-strong: 205 219 213; /* #cddbd5 */
+    --color-border-neutral: 229 231 235; /* #e5e7eb — Figma variable "strok" */
+    --color-border-subtle: 243 244 246; /* #f3f4f6 — mobile header rule */
+    --color-border-soft: 220 230 223; /* #dce6df — tables, FAQ items */
+    --color-border-inverse: 182 202 192; /* #b6cac0 — outlined buttons on dark green */
+
+    /* Accents */
+    --color-mint: 158 222 201; /* #9edec9 */
+    --color-mint-light: 199 242 225; /* #c7f2e1 */
+    --color-mint-lighter: 224 254 244; /* #e0fef4 */
+    --color-mint-outline: 200 224 213; /* outlined numerals */
+    --color-mint-pale: 213 231 223; /* #d5e7df — body text on dark green */
+    --color-gold: 180 147 79; /* #b4934f */
+    --color-slate: 76 91 118; /* #4c5b76 */
+
+    /* Footer */
+    --color-footer: 11 63 48; /* #0b3f30 */
+    --color-footer-text: 126 150 140; /* #7e968c */
+    --color-footer-link: 157 177 169; /* #9db1a9 */
+    --color-footer-copy: 223 223 223; /* #dfdfdf */
+
+    /* CTA banner */
+    --color-cta-from: 7 86 63; /* #07563f */
+    --color-cta-to: 10 139 96; /* #0a8b60 */
+    --color-cta-body: 228 228 228; /* #e4e4e4 */
+  }
+
+  /* Clip (not hide) horizontal overflow so sticky positioning keeps working;
+     set on both roots because some mobile browsers only honour it on <html>. */
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    @apply bg-surface font-sans text-content-primary antialiased;
+    overflow-x: clip;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand;
+  }
+}
+
+@layer utilities {
+  /* Outlined numerals used on the challenge cards. */
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(var(--color-mint-outline));
+  }
+}
