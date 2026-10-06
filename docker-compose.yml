@@ -1,0 +1,16 @@
+services:
+  web:
+    build: .
+    image: cooperatives:latest
+    container_name: cooperatives
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    environment:
+      NODE_ENV: production
+    volumes:
+      # Keeps optimized images between restarts so they are not regenerated.
+      - next-cache:/app/.next/cache
+
+volumes:
+  next-cache:
