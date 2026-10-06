@@ -11,7 +11,6 @@ import { CtaBanner } from "@/components/features/shared";
 
 export default function HomePage() {
   return (
-    // Mobile frame: 36px top, 36px hero-to-stats, then 48px between every block.
     <div className="pb-12 pt-9 lg:pb-[200px] lg:pt-[75px]">
       <HomeHero />
       <div className="mt-9 lg:mt-[44px]">

@@ -11,7 +11,6 @@ interface NumberedListProps {
   className?: string;
 }
 
-/** Vertical list of numbered steps separated by hairline dividers. */
 export function NumberedList({ items, bordered = false, closed = true, className }: NumberedListProps) {
   return (
     <ol

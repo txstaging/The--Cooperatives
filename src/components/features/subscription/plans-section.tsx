@@ -5,28 +5,42 @@ import type { Plan } from "@/types";
 import { cn } from "@/lib/cn";
 import { SectionHeading } from "./section-heading";
 
+/**
+ * Button sizes from the Figma mobile frame, keyed by `${plan.id}-${actionIndex}`.
+ * The recommended plan's button is full width at 48px on every breakpoint.
+ */
+const mobileActionSizes: Record<string, string> = {
+  "basic-0": "h-[46px] max-w-[268px]",
+  "partnership-0": "h-10 max-w-[259px]",
+  "partnership-1": "h-[35px] max-w-[268px]",
+};
+
 function PlanCard({ plan }: { plan: Plan }) {
   const { recommended = false } = plan;
 
   return (
     <li
       className={cn(
-        "flex flex-col overflow-hidden rounded-[8px] border-brand bg-white",
-        recommended ? "border-2 p-[2px] drop-shadow-[0_8px_12px_rgba(6,63,49,0.07)]" : "border p-px",
+        "flex flex-col overflow-hidden rounded-[8px] bg-white",
+        recommended
+          ? "border-2 border-brand p-[2px] drop-shadow-[0_8px_12px_rgba(6,63,49,0.07)]"
+          : "border border-line-soft p-px lg:border-brand",
       )}
     >
       <div
         className={cn(
-          "flex min-h-[208px] flex-col items-start gap-2 rounded-t-[6px] p-6 sm:p-8",
+          "flex flex-col items-start gap-2 rounded-t-[6px] p-8 lg:min-h-[208px]",
           recommended && "bg-brand-deep",
         )}
       >
         {plan.badge ? (
-          <p className="h-[26px] rounded-[4px] bg-surface-card px-4 pt-[6px] text-[14px] font-bold leading-[normal] text-brand-deep">
+          <p className="rounded-[4px] bg-gold-light px-4 py-1 text-[14px] font-bold leading-[normal] text-brand-deep lg:h-[26px] lg:bg-surface-card lg:pb-0 lg:pt-[6px]">
             {plan.badge}
           </p>
         ) : (
-          <p className="text-[14px] font-bold leading-[1.5] text-content-secondary">{plan.eyebrow}</p>
+          <p className="text-[14px] font-bold leading-[1.5] text-content-subtle lg:text-content-secondary">
+            {plan.eyebrow}
+          </p>
         )}
         <h3
           className={cn(
@@ -39,14 +53,14 @@ function PlanCard({ plan }: { plan: Plan }) {
         <p
           className={cn(
             "text-body-lg leading-[1.5]",
-            recommended ? "text-mint-pale" : "text-content-secondary",
+            recommended ? "text-mint-pale" : "text-content-subtle lg:text-content-secondary",
           )}
         >
           {plan.description}
         </p>
       </div>
 
-      <div className="flex flex-1 flex-col gap-6 p-6 sm:p-8">
+      <div className="flex flex-1 flex-col gap-6 p-8">
         <ul className="flex flex-col gap-4 lg:min-h-[328px]">
           {plan.features.map((feature) => (
             <li key={feature} className="flex items-start gap-2">
@@ -58,24 +72,30 @@ function PlanCard({ plan }: { plan: Plan }) {
                 unoptimized
                 className="size-5 shrink-0"
               />
-              <span className="text-[16px] font-medium leading-[1.5] text-content-primary">{feature}</span>
+              <span className="text-[16px] font-medium leading-[1.5] text-ink lg:text-content-primary">
+                {feature}
+              </span>
             </li>
           ))}
         </ul>
-        {/* Regular cards center their buttons in the 128px action area; the recommended one pins it to the top. */}
         <div
           className={cn(
             "mt-auto flex flex-col gap-4 lg:min-h-[128px]",
             !recommended && "lg:justify-center lg:px-[5px]",
           )}
         >
-          {plan.actions.map((action) => (
+          {plan.actions.map((action, index) => (
             <ButtonLink
               key={action.label}
               href={action.href}
               variant={action.variant === "primary" ? "primary" : "brand-outline"}
               size="action"
               fullWidth
+              className={cn(
+                !recommended && "self-center lg:h-12 lg:max-w-none lg:self-stretch",
+                !recommended && mobileActionSizes[`${plan.id}-${index}`],
+                action.variant === "outline" && "border-line-soft lg:border-brand",
+              )}
             >
               {action.label}
             </ButtonLink>
@@ -93,11 +113,12 @@ export function PlansSection() {
     <section
       id={packagesAnchor}
       aria-labelledby="plans-title"
-      className="scroll-mt-[82px] pb-14 pt-6 sm:pb-20 lg:pb-[98px] lg:pt-[71px]"
+      className="scroll-mt-[82px] py-12 lg:pb-[98px] lg:pt-[71px]"
     >
-      <Container size="wide" className="flex flex-col gap-8">
+      <Container size="wide" className="flex flex-col gap-8 px-6 sm:px-6">
         <SectionHeading
           align="center"
+          className="items-start text-start lg:items-center lg:text-center"
           title={<span id="plans-title">{title}</span>}
           subtitle={subtitle}
           subtitleClassName="lg:text-[24px]"

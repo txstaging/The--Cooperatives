@@ -24,7 +24,6 @@ export function JourneySection() {
           </div>
         </div>
 
-        {/* The source render is cropped inside a framed viewport, as in the design. */}
         <div className="relative mx-auto h-[250px] w-full max-w-[522px] overflow-hidden rounded-[14px] border border-mint lg:mx-0 lg:aspect-[522/426] lg:h-auto lg:rounded-3xl">
           <Image
             src={image.src}

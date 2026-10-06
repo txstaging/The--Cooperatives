@@ -9,7 +9,6 @@ function ChallengeCard({ challenge }: { challenge: Challenge }) {
         {challenge.title}
       </h3>
       <p className="text-[12px] leading-[1.6] text-content-primary lg:pt-px lg:text-label-xs">{challenge.description}</p>
-      {/* Mobile: small outlined number in the flow at the end side; desktop: large, pinned bottom-end. */}
       <span
         aria-hidden="true"
         className="text-outline h-[18px] select-none text-end text-[24px] font-extrabold leading-[1.1] lg:absolute lg:-bottom-[6px] lg:end-[16.5px] lg:h-auto lg:text-numeral"

@@ -25,6 +25,7 @@ const config: Config = {
           primary: token("text-primary"),
           secondary: token("text-secondary"),
           muted: token("text-muted"),
+          subtle: token("text-subtle"),
           inverse: token("text-inverse"),
         },
         surface: {
@@ -49,7 +50,10 @@ const config: Config = {
           outline: token("mint-outline"),
           pale: token("mint-pale"),
         },
-        gold: token("gold"),
+        gold: {
+          DEFAULT: token("gold"),
+          light: token("gold-light"),
+        },
         slate: token("slate"),
         footer: {
           DEFAULT: token("footer"),

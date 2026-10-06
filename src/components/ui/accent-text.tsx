@@ -6,7 +6,6 @@ interface AccentTextProps {
   accentClassName?: string;
 }
 
-/** Renders a phrase whose trailing part is highlighted in an accent color. */
 export function AccentText({ value, accentClassName = "text-brand" }: AccentTextProps) {
   return (
     <>

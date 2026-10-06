@@ -11,7 +11,6 @@ const sizeClasses = {
   wide: "max-w-wide",
 } as const;
 
-/** Centered, max-width page container with responsive side gutters. */
 export function Container<T extends ElementType = "div">({
   as,
   size = "default",

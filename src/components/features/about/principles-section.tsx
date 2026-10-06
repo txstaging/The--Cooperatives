@@ -3,7 +3,6 @@ import { SectionHeader } from "@/components/ui";
 import type { Principle } from "@/types";
 import { cn } from "@/lib/cn";
 
-/* Mobile cards use 32px glyphs (54px for the thin ⌁); desktop keeps the larger scale. */
 const symbolSizeClasses: Record<Principle["symbolSize"], string> = {
   sm: "text-[32px] lg:text-symbol-sm",
   md: "text-[32px] lg:text-[35px]",

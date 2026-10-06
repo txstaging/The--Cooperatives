@@ -7,8 +7,8 @@ export function BenefitsSection() {
   const { title, subtitle, items } = benefitsSection;
 
   return (
-    <section aria-labelledby="benefits-title" className="py-14 sm:py-16">
-      <Container size="wide" className="flex flex-col gap-8">
+    <section aria-labelledby="benefits-title" className="py-12 lg:py-16">
+      <Container size="wide" className="flex flex-col gap-8 px-6 sm:px-6">
         <SectionHeading
           title={<span id="benefits-title">{title}</span>}
           subtitle={subtitle}
@@ -25,8 +25,10 @@ export function BenefitsSection() {
                 unoptimized
                 className="size-8"
               />
-              <h3 className="text-[24px] font-bold leading-[1.5] text-content-primary">{item.title}</h3>
-              <p className="text-body-lg leading-[1.5] text-content-secondary">{item.description}</p>
+              <h3 className="text-[24px] font-bold leading-[1.5] text-ink lg:text-content-primary">{item.title}</h3>
+              <p className="text-body-lg leading-[1.5] text-content-subtle lg:text-content-secondary">
+                {item.description}
+              </p>
             </li>
           ))}
         </ul>

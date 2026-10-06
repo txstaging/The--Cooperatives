@@ -9,7 +9,6 @@ export function HomeHero() {
     <section aria-labelledby="home-hero-title">
       <Container size="wide" className="lg:p-[10px]">
         <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,604px)_minmax(0,521px)] lg:items-start lg:justify-between lg:gap-12 xl:gap-[105px]">
-          {/* Mobile: centered stack, 20px gaps, title wraps freely. */}
           <div className="flex flex-col items-center gap-5 lg:items-stretch lg:gap-0">
             <h1
               id="home-hero-title"

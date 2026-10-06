@@ -17,6 +17,7 @@
     --color-text-primary: 26 26 26; /* #1a1a1a */
     --color-text-secondary: 87 88 91; /* #57585b */
     --color-text-muted: 102 117 110; /* #66756e */
+    --color-text-subtle: 92 112 102; /* #5c7066 — mobile subscription copy */
     --color-text-inverse: 255 255 255;
 
     /* Surfaces — Figma variables "background/section", "background/card" */
@@ -41,6 +42,7 @@
     --color-mint-outline: 200 224 213; /* outlined numerals */
     --color-mint-pale: 213 231 223; /* #d5e7df — body text on dark green */
     --color-gold: 180 147 79; /* #b4934f */
+    --color-gold-light: 245 240 229; /* #f5f0e5 — mobile "most chosen" badge */
     --color-slate: 76 91 118; /* #4c5b76 */
 
     /* Footer */

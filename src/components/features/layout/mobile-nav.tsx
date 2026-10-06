@@ -18,7 +18,6 @@ interface MobileNavProps {
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
 
-/** Hamburger button + slide-in drawer shown below the `lg` breakpoint. */
 export function MobileNav({ links, cta }: MobileNavProps) {
   const [open, setOpen] = useState(false);
   const panelId = useId();

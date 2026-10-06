@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    // Mobile frame: 36px top, 40px under the hero, then 48px between every block.
     <Container className="flex flex-col gap-12 pb-12 pt-9 lg:gap-[123px] lg:pb-[148px] lg:pt-[94px]">
       <AboutHero />
       <div className="-mt-2 lg:mt-0">

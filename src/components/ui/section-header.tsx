@@ -11,7 +11,6 @@ interface SectionHeaderProps {
   subtitleClassName?: string;
 }
 
-/** Section title + optional subtitle with the design's responsive type scale. */
 export function SectionHeader({
   title,
   subtitle,

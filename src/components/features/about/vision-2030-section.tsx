@@ -10,7 +10,6 @@ export function Vision2030Section() {
       className="grid scroll-mt-28 grid-cols-1 gap-6 overflow-hidden rounded-4xl bg-surface-card p-6 lg:min-h-[623px] lg:rounded-6xl lg:font-kufi lg:grid-cols-[minmax(0,521px)_minmax(0,438px)] lg:justify-center lg:gap-10 lg:px-8 lg:py-0 xl:justify-start xl:gap-[57px] xl:pe-[95px] xl:ps-[156px]"
     >
       {/* Text column: pinned 66px (+17px padding) from the top, as in Figma. */}
-      {/* Mobile: centered Tajawal stack; desktop: Kufi, start-aligned, pinned 66px (+17px) from the top. */}
       <div className="flex flex-col gap-6 text-center lg:gap-[17px] lg:self-start lg:pb-10 lg:pt-[83px] lg:text-start">
         <p className="flex items-center justify-center gap-[9px] text-[14px] font-bold leading-[1.85] text-content-primary lg:justify-start lg:text-[17px] lg:font-extrabold lg:leading-[19px]">
           {eyebrow}

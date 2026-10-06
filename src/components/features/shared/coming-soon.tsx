@@ -6,7 +6,6 @@ interface ComingSoonProps {
   description?: string;
 }
 
-/** Placeholder for routes that exist in the navigation but have no design yet. */
 export function ComingSoon({
   title,
   description = "نعمل على إعداد هذه الصفحة، وستكون متاحة قريبًا.",

@@ -10,8 +10,7 @@ export function ContactHero() {
       aria-labelledby="contact-hero-title"
       className="grid grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-[60px]"
     >
-      {/* Mobile: centered stack with 24px gaps. Desktop: Figma pins the text block
-          76.5px below the row top rather than centering it. */}
+      {/* Figma pins the desktop text block 76.5px below the row top rather than centering it. */}
       <div className="flex flex-col items-center gap-6 lg:items-start lg:gap-0 lg:self-start lg:pt-[76.5px]">
         <h1
           id="contact-hero-title"

@@ -11,7 +11,6 @@ export function AboutHero() {
       className="grid grid-cols-1 items-center gap-5 lg:grid-cols-2 lg:gap-[60px]"
     >
       {/* Figma pins the text block 76.5px below the row top rather than centering it. */}
-      {/* Mobile: centered stack with 20px gaps; the heading wraps freely instead of breaking per line. */}
       <div className="flex flex-col items-center gap-5 lg:items-start lg:gap-0 lg:self-start lg:pt-[76.5px]">
         <h1
           id="about-hero-title"

@@ -14,7 +14,6 @@ export function StatsStrip() {
               // Mobile 2×2 grid: 150px cells, each outlined at 0.5px (1px where two meet).
               "flex h-[150px] flex-col items-center justify-center gap-[3px] border-hairline border-line px-2 py-[22px] text-center",
               "lg:h-[189px] lg:max-w-[286px] lg:flex-1 lg:justify-start lg:gap-0 lg:border-0 lg:px-[25px] lg:py-[35px]",
-              // Desktop row: divider after every cell except the last.
               i !== lastIndex && "lg:border-l",
             )}
           >
