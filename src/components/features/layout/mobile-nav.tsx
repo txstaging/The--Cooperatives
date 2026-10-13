@@ -122,6 +122,7 @@ export function MobileNav({ links, cta }: MobileNavProps) {
                       href={link.href}
                       aria-current={active ? "page" : undefined}
                       onClick={close}
+                      {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                       className={cn(
                         "flex min-h-12 items-center rounded-sm px-3 text-body-lg transition-colors",
                         active

@@ -31,7 +31,7 @@ export function ContactHero() {
         </ButtonLink>
       </div>
 
-      <div className="relative aspect-[590/360] w-full overflow-hidden rounded-[16px]">
+      <div className="relative aspect-[2/1] w-full overflow-hidden rounded-[16px] lg:self-start">
         <Image
           src={image.src}
           alt={image.alt}

@@ -7,6 +7,12 @@ export const routes = {
   contact: "/contact",
 } as const;
 
+export const trainingLink: NavLink = {
+  label: "التدريب",
+  href: "https://lms.thetransformix.com/",
+  external: true,
+};
+
 export const siteConfig = {
   name: "التعاونيات",
   title: "التعاونيات — منظومة وطنية لتمكين التعاونيات",
@@ -20,6 +26,7 @@ export const mainNav: readonly NavLink[] = [
   { label: "الرئيسية", href: routes.home },
   { label: "عن التعاونيات", href: routes.about },
   { label: "الاشتراك", href: routes.subscription },
+  trainingLink,
   { label: "التواصل معنا", href: routes.contact },
 ];
 
@@ -35,6 +42,7 @@ export const footerColumns: readonly FooterColumn[] = [
       { label: "عن التعاونيات", href: routes.about },
       { label: "التحول الرقمي", href: `${routes.about}#vision-2030` },
       { label: "الاشتراك", href: routes.subscription },
+      trainingLink,
     ],
   },
   {

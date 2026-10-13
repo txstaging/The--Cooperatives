@@ -7,10 +7,10 @@ export const contactHero = {
     "سواء كنت صاحب مشروع، تعاونية، مستثمرًا أو شريكًا استراتيجيًا، فريقنا جاهز للتواصل معك.",
   cta: joinCta satisfies CallToAction,
   image: {
-    src: "/images/contact-hero.png",
-    alt: "موظفة خدمة عملاء سعودية تعمل على حاسوب محمول وسط أيقونات تواصل ومعالم الرياض والعلم السعودي",
-    width: 1536,
-    height: 1024,
+    src: "/images/contact-channels.png",
+    alt: "بطاقات بأيقونات الهاتف والرسائل والبريد والموقع تتصل بخطوط خضراء متموجة وطائرة ورقية، تعبر عن قنوات التواصل",
+    width: 1774,
+    height: 887,
   } satisfies ImageAsset,
 };
 

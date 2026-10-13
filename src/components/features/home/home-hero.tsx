@@ -41,7 +41,7 @@ export function HomeHero() {
             </div>
           </div>
 
-          <div className="relative mx-auto aspect-[521/444] w-full max-w-[521px] lg:mx-0">
+          <div className="relative mx-auto aspect-[3/2] w-full max-w-[521px] lg:mx-0">
             <Image
               src={image.src}
               alt={image.alt}

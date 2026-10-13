@@ -1,6 +1,8 @@
 export interface NavLink {
   label: string;
   href: string;
+  /** Off-site link; opens in a new tab. */
+  external?: boolean;
 }
 
 export interface FooterColumn {

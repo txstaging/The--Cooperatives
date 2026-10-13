@@ -36,7 +36,7 @@ export function AboutHero() {
         </ButtonLink>
       </div>
 
-      <div className="relative mx-auto aspect-[3/2] w-full max-w-[540px] lg:mx-0 lg:justify-self-end">
+      <div className="relative mx-auto aspect-[2/1] w-full max-w-[540px] lg:mx-0 lg:justify-self-end">
         <Image
           src={image.src}
           alt={image.alt}

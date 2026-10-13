@@ -36,6 +36,7 @@ export function SiteFooter() {
                     <li key={link.label}>
                       <Link
                         href={link.href}
+                        {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                         className="text-[16px] leading-[1.5] text-line-inverse transition-colors hover:text-content-inverse lg:leading-[19.25px] lg:text-footer-link"
                       >
                         {link.label}

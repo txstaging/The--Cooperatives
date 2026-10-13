@@ -27,18 +27,22 @@ export const subscriptionHero = {
   title: "اختر المسار المناسب لنموك",
   description:
     "حلول وبرامج وخدمات مصممة لتلبية احتياجات التعاونيات وأصحاب المشروعات الصغيرة وأصحاب الأموال والشركاء.",
-  cta: { label: "انضم الآن", href: `#${packagesAnchor}` } satisfies CallToAction,
+  cta: {
+    label: "انضم الآن",
+    href: `#${packagesAnchor}`,
+  } satisfies CallToAction,
   image: {
-    src: "/images/subscription-hero.png",
-    alt: "بطاقات الباقات الأساسية والمتقدمة والمميزة محاطة بلوحات بيانات وعملات ذهبية وسهم نمو",
-    width: 1536,
-    height: 1024,
+    src: "/images/subscription-growth.png",
+    alt: "يد تحمل مكعبات متدرجة تنمو منها نباتات خضراء بأيقونات النمو والمجتمع والشراكة والأهداف، يعلوها سهم صاعد",
+    width: 1829,
+    height: 860,
   } satisfies ImageAsset,
 };
 
 export const plansSection = {
   title: "اختر الباقة التي تناسب احتياجاتك",
-  subtitle: "ابدأ بالمسار المناسب لك، واستفد من الخدمات والفرص المصممة لدعم النمو.",
+  subtitle:
+    "ابدأ بالمسار المناسب لك، واستفد من الخدمات والفرص المصممة لدعم النمو.",
   plans: [
     {
       id: "basic",
@@ -53,7 +57,9 @@ export const plansSection = {
         "المشاركة في الفعاليات",
         "الدعم الأساسي",
       ],
-      actions: [{ label: "ابدأ الآن", href: routes.contact, variant: "outline" }],
+      actions: [
+        { label: "ابدأ الآن", href: routes.contact, variant: "outline" },
+      ],
     },
     {
       id: "growth",
@@ -69,7 +75,9 @@ export const plansSection = {
         "أولوية في بعض البرامج",
         "استشارات تطويرية",
       ],
-      actions: [{ label: "ابدأ رحلة النمو", href: routes.contact, variant: "primary" }],
+      actions: [
+        { label: "ابدأ رحلة النمو", href: routes.contact, variant: "primary" },
+      ],
       recommended: true,
     },
     {
@@ -87,7 +95,11 @@ export const plansSection = {
         "حلول حسب الاحتياج",
       ],
       actions: [
-        { label: "اطلب عرضًا مخصصًا", href: routes.contact, variant: "primary" },
+        {
+          label: "اطلب عرضًا مخصصًا",
+          href: routes.contact,
+          variant: "primary",
+        },
         { label: "تواصل معنا", href: routes.contact, variant: "outline" },
       ],
     },
@@ -118,10 +130,26 @@ export const benefitsSection = {
   title: "أكثر من مجرد اشتراك",
   subtitle: "أنت لا تنضم إلى منصة فقط، بل إلى منظومة تساعدك على النمو.",
   items: [
-    { title: "الوصول", description: "الوصول إلى فرص وأسواق وشراكات جديدة.", icon: icon("network", 32) },
-    { title: "التحول", description: "حلول تساعدك على تطوير العمليات رقميًا.", icon: icon("workflow", 32) },
-    { title: "المعرفة", description: "برامج ومحتوى يساعدك على تطوير قدراتك.", icon: icon("book-open", 32) },
-    { title: "النمو", description: "منظومة متكاملة تساعدك على بناء نمو مستدام.", icon: icon("sprout", 32) },
+    {
+      title: "الوصول",
+      description: "الوصول إلى فرص وأسواق وشراكات جديدة.",
+      icon: icon("network", 32),
+    },
+    {
+      title: "التحول",
+      description: "حلول تساعدك على تطوير العمليات رقميًا.",
+      icon: icon("workflow", 32),
+    },
+    {
+      title: "المعرفة",
+      description: "برامج ومحتوى يساعدك على تطوير قدراتك.",
+      icon: icon("book-open", 32),
+    },
+    {
+      title: "النمو",
+      description: "منظومة متكاملة تساعدك على بناء نمو مستدام.",
+      icon: icon("sprout", 32),
+    },
   ] satisfies IconFeature[],
 };
 
@@ -195,6 +223,12 @@ export const faqSection = {
 export const joinBanner = {
   title: "مستعد تبدأ رحلة النمو؟",
   description: "اختر الباقة المناسبة وانضم إلى منظومة التعاونيات.",
-  primaryCta: { label: "انضم الآن", href: `#${packagesAnchor}` } satisfies CallToAction,
-  secondaryCta: { label: "تحدث مع فريقنا", href: routes.contact } satisfies CallToAction,
+  primaryCta: {
+    label: "انضم الآن",
+    href: `#${packagesAnchor}`,
+  } satisfies CallToAction,
+  secondaryCta: {
+    label: "تحدث مع فريقنا",
+    href: routes.contact,
+  } satisfies CallToAction,
 };

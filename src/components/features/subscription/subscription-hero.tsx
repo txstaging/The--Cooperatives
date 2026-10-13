@@ -31,13 +31,13 @@ export function SubscriptionHero() {
             {cta.label}
           </ButtonLink>
 
-          <div className="relative aspect-[3/2] w-full max-w-[297px] justify-self-center lg:col-start-2 lg:row-start-1 lg:aspect-auto lg:h-[360px] lg:w-[540px] lg:max-w-none lg:justify-self-end">
+          <div className="relative aspect-[590/278] w-full max-w-[297px] justify-self-center lg:col-start-2 lg:row-start-1 lg:max-w-[590px] lg:self-start lg:justify-self-end">
             <Image
               src={image.src}
               alt={image.alt}
               fill
               priority
-              sizes="(min-width: 1024px) 540px, 297px"
+              sizes="(min-width: 1024px) 590px, 297px"
               className="object-cover"
             />
           </div>

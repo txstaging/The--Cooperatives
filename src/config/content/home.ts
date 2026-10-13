@@ -19,10 +19,10 @@ export const homeHero = {
   primaryCta: { label: "ابدأ رحلة النمو", href: routes.subscription } satisfies CallToAction,
   secondaryCta: { label: "اكتشف المنظومة", href: routes.about } satisfies CallToAction,
   image: {
-    src: "/images/hero-vision-2030.png",
-    alt: "رجل أعمال سعودي يحمل جهازًا لوحيًا وسط مشهد لنمو المدن والاقتصاد ضمن رؤية 2030",
-    width: 1358,
-    height: 1159,
+    src: "/images/hero-cooperation.png",
+    alt: "يدان متشابكتان بإحكام داخل إكليل من أوراق الغار الخضراء والذهبية، رمزًا للتعاون والشراكة",
+    width: 1536,
+    height: 1024,
   } satisfies ImageAsset,
 };
 
@@ -65,10 +65,10 @@ export const growthSection = {
   description:
     "نربط الإدارة الرقمية بالحوكمة والبيانات والفرص، لنخلق بيئة تساعد التعاونيات وأصحاب المشروعات على التحرك بثقة.",
   image: {
-    src: "/images/growth-ecosystem.png",
+    src: "/images/sustainable-growth.png",
     alt: "مخطط منظومة النمو المستدام: رأس المال، التعاونية، المشروع، السوق، والشريك",
-    width: 1312,
-    height: 1199,
+    width: 1313,
+    height: 1198,
   } satisfies ImageAsset,
   steps: [
     { index: "01", title: "رقمنة", description: "بيانات وعمليات موحدة" },

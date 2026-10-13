@@ -22,6 +22,7 @@ export function DesktopNav({ links }: DesktopNavProps) {
               <Link
                 href={link.href}
                 aria-current={active ? "page" : undefined}
+                {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                 className={cn(
                   "block whitespace-nowrap py-7 text-body-lg leading-[22.75px] transition-colors",
                   active
