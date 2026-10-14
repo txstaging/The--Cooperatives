@@ -9,7 +9,7 @@ export const routes = {
 
 export const trainingLink: NavLink = {
   label: "التدريب",
-  href: "https://lms.thetransformix.com/",
+  href: "http://165.22.84.74:3100/",
   external: true,
 };
 
@@ -30,7 +30,10 @@ export const mainNav: readonly NavLink[] = [
   { label: "التواصل معنا", href: routes.contact },
 ];
 
-export const joinCta: CallToAction = { label: "انضم الآن", href: routes.subscription };
+export const joinCta: CallToAction = {
+  label: "انضم الآن",
+  href: routes.subscription,
+};
 
 export const footerTagline =
   "منظومة وطنية لتمكين التعاونيات وأصحاب المشروعات الصغيرة من النمو والتحول الرقمي وبناء قيمة مستدامة.";

@@ -19,10 +19,10 @@ export const homeHero = {
   primaryCta: { label: "ابدأ رحلة النمو", href: routes.subscription } satisfies CallToAction,
   secondaryCta: { label: "اكتشف المنظومة", href: routes.about } satisfies CallToAction,
   image: {
-    src: "/images/hero-cooperation.png",
-    alt: "يدان متشابكتان بإحكام داخل إكليل من أوراق الغار الخضراء والذهبية، رمزًا للتعاون والشراكة",
-    width: 1536,
-    height: 1024,
+    src: "/images/hero-saudi-cooperatives.png",
+    alt: "خريطة المملكة العربية السعودية وشعارها أمام مكعبات خشبية بأيقونات المجتمع والنمو والعمليات، يحيط بها قوس من أيقونات الشراكة والأهداف ونبتة خضراء",
+    width: 1671,
+    height: 941,
   } satisfies ImageAsset,
 };
 
